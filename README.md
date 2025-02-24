@@ -1,7 +1,5 @@
 # HealthyRecipes
 
-This project was created with [Craftsman](https://github.com/pdevito3/craftsman).
-
 ## Getting Started
 1. Run `docker-compose up --build` from your `.sln` directory to spin up your database(s) and other supporting 
 infrastructure depending on your configuration (e.g. RabbitMQ, Keycloak, Jaeger, etc.).
@@ -32,18 +30,6 @@ Migrations should be applied for you automatically on startup, but if you have a
 
     > You can also stay in the `sln` root and run something like `dotnet ef database update --project RecipeManagement/src/RecipeManagement`
 
-## Running Integration Tests
-To run integration tests:
-
-1. Ensure that you have docker installed.
-2. Go to your src directory for the bounded context that you want to test.
-3. Confirm that you have migrations in your infrastructure project. If you need to add them, see the [instructions below](#running-migrations).
-4. Run the tests
-
-> ⏳ If you don't have the database image pulled down to your machine, they will take some time on the first run.
-
-### Troubleshooting
-- If your entity has foreign keys, you might need to adjust some of your tests after scaffolding to accomodate them.
 
 ## Running Migrations
 To create a new migration, make sure your environment is set to `Development`:

@@ -36,7 +36,7 @@ services:
       - '50604:1433'
     environment:
       - DB_USER=SA
-      - SA_PASSWORD=#localDockerPassword#
+      - SA_PASSWORD=MELNe1378valya202520252025!*$
       - DB_CONTAINER_NAME=dev_recipemanagement
       - ACCEPT_EULA=Y
     volumes:
